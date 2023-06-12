@@ -1,0 +1,261 @@
+@import "source/var";
+@import "source/header";
+@import "source/footer";
+@import "source/form";
+
+
+.main {
+    background: #F8F9FF;
+}
+
+.main-inside {
+    width: $content-width;
+    margin: 0 auto;
+}
+
+.text {
+    &__subtitle {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #172755;
+        padding-top: 38px;
+
+        &_screen {
+            padding-top: 0;
+            padding-bottom: 30px;
+            width: 480px;
+            text-align: left;
+        }
+
+        &_price {
+            color: #ffffff;
+            padding-top: 286px;
+        }
+    }
+
+    &__desc {
+        &_features {
+            width: 1060px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        &_price {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: #8794ba;
+            padding-top: 30px;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 81px;
+}
+
+.icon {
+    width: 380px;
+    padding-top: 41px;
+    text-align: center;
+
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #172755;
+        padding-top: 34px;
+        padding-bottom: 31px;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #8794ba;
+        width: 350px;
+        height: 44px;
+    }
+}
+
+.screen {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-section {
+    background: #f8f9ff;
+    background-image: url("./img/price/background-bottom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.price {
+    width: $content-width;
+    margin: 0 auto;
+    height: 1086px;
+}
+
+.price__cards {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.price__card {
+    background: #0F1F4B;
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+    border-radius: 30px;
+    width: 340px;
+    text-align: center;
+
+    &:hover {
+        background: #ffffff;
+        transition: background 0.5s;
+    }
+
+    &:hover .card__text__title {
+        color: #172755;
+    }
+
+    &:hover .card__button {
+        background: #ef2a82;
+        border-color: transparent;
+    }
+
+    &:hover .card__tariff__price {
+        color: #172755;
+    }
+}
+
+.card__text {
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 50px;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #8794BA;
+        margin-top: 10px;
+        margin-bottom: 37px;
+    }
+}
+
+.card__tariff {
+    &__price {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 33px;
+
+        &_small_text {
+            font-size: 30px;
+        }
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #8794ba;
+        margin-top: 20px;
+    }
+}
+
+.card__button {
+    padding: 15px 83px;
+    border-radius: 68px;
+    background: none;
+    border: 1px solid #8794ba;
+    margin: 40px 67px;
+    cursor: pointer;
+
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+.article {
+    background: #F8F9FF;
+}
+
+.article-inside {
+    width: $content-width;
+    margin: 0 auto;
+}
+
+.companies_registration {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    padding-top: 109px;
+    padding-bottom: 199px;
+}
+
+.company {
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #160637;
+        width: 431px;
+    }
+
+    &__desc {
+        padding-top: 75px;
+        padding-bottom: 53px;
+        display: flex;
+        gap: 24px;
+
+        &_text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #8989A2;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 90px;
+        justify-content: center;
+        width: 302px;
+    }
+
+    &__icons__link {
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-bottom: 2px solid rgb(255, 0, 162);
+        }
+    }
+}
